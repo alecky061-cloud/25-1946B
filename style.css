@@ -167,3 +167,43 @@ video {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+/* Center all headings */
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Container styling */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;   /* centers text and inline elements */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Search bar styling */
+.search-bar {
+  text-align: center;
+  margin: 20px 0;
+}
+.search-bar input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-bar button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  background-color: #34495e;
+}
