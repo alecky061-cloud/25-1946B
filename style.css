@@ -231,37 +231,26 @@ img {
   margin: 10px auto;
   display: block; /* centers images */
 }
-/* Full-page background */
+/* Whole page background */
 body {
   background-color: #000;   /* pure black */
   color: #e0e0e0;           /* light gray text for readability */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-/* Container */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  background-color: #111;   /* slightly lighter black for contrast */
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+  text-align: center;       /* centers all text by default */
 }
 
 /* Headings */
 h1, h2 {
+  color: #ff4757;           /* red accent for gamer vibe */
   text-align: center;
-  color: #ff4757;           /* vibrant red accent for gamer vibe */
 }
 
 /* Navigation bar */
 nav {
-  background-color: #222;
+  background-color: #000;   /* keep it black */
   padding: 10px;
-  text-align: center;
 }
 nav a {
   color: #fff;
@@ -274,7 +263,6 @@ nav a:hover {
 
 /* Search bar */
 .search-bar {
-  text-align: center;
   margin: 20px 0;
 }
 .search-bar input {
