@@ -231,4 +231,70 @@ img {
   margin: 10px auto;
   display: block; /* centers images */
 }
+/* Background color for the whole page */
+body {
+  background-color: #1a1a1d; /* deep dark gray for immersive feel */
+  color: #e0e0e0;           /* light text for readability */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #2c2c34; /* slightly lighter dark tone */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #ff4757; /* vibrant red accent for gamer vibe */
+}
+
+/* Navigation bar */
+nav {
+  background-color: #2c3e50;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+nav a:hover {
+  color: #ff4757;
+}
+
+/* Search bar */
+.search-bar {
+  text-align: center;
+  margin: 20px 0;
+}
+.search-bar input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+.search-bar button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  background-color: #e84118;
+}
 
