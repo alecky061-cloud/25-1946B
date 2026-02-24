@@ -1,90 +1,77 @@
-/* Whole page background and text */
+/* Black Background */
 body {
-  background-color: purple;  /* full-page purple background */
-  color: #000;               /* all text black */
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  background-color: #000;  /* Black background */
+  color: white;
+}
+
+/* Navigation */
+nav {
+  background-color: #111;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* Search Bar */
+.search-bar {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff9800;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-bar button:hover {
+  background-color: #ff5722;
 }
 
 /* Container */
 .container {
-  max-width: 900px;          /* keeps content from stretching too wide */
-  margin: 0 auto;            /* centers the container horizontally */
-  text-align: center;        /* centers text inside */
+  width: 80%;
+  margin: auto;
   padding: 20px;
-  background-color: purple;  /* same as page background for seamless look */
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #000;
   text-align: center;
 }
 
-/* Paragraphs and lists */
-p, li, ul, ol, footer {
-  color: #000;
-  text-align: center;
+/* Image */
+.main-image {
+  width: 300px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.2);
 }
 
-/* Navigation bar */
-nav {
-  background-color: purple;
-  padding: 10px;
+/* Footer */
+footer {
+  background-color: #111;
   text-align: center;
-}
-nav a {
-  color: #000;
-  text-decoration: none;
-  margin: 0 15px;
-}
-nav a:hover {
-  color: #333;
-}
-
-/* Search bar */
-.search-bar {
-  margin: 20px 0;
-  text-align: center;
-}
-.search-bar input {
-  padding: 8px;
-  width: 250px;
-  border: 1px solid #444;
-  border-radius: 5px;
-  background-color: purple;
-  color: #000;
-  text-align: center;
-}
-.search-bar button {
-  padding: 8px 12px;
-  margin-left: 5px;
-  background-color: #000;
-  color: purple;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.search-bar button:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-/* Gallery */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;   /* centers images horizontally */
-  margin: 20px 0;
-}
-.gallery img {
-  border: 2px solid #000;
-  border-radius: 8px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-}
-.gallery img:hover {
-  transform: scale(1.05);
+  padding: 15px;
+  margin-top: 30px;
 }
