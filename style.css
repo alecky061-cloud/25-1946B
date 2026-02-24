@@ -446,15 +446,7 @@ nav a:hover {
 .gallery img:hover {
   transform: scale(1.05);
 }
-/* Whole page background and default text */
-body {
-  background-color: #000;   /* pure black */
-  color: #fff;              /* force all text to white */
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
