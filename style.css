@@ -5,26 +5,34 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;        /* centers text globally */
+}
+
+/* Container */
+.container {
+  max-width: 900px;          /* keeps content from stretching too wide */
+  margin: 0 auto;            /* centers the container horizontally */
+  text-align: center;        /* centers text inside */
+  padding: 20px;
+  background-color: purple;  /* same as page background for seamless look */
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #000;               /* black headings */
-  text-align: center;        /* centered headings */
+  color: #000;
+  text-align: center;
 }
 
 /* Paragraphs and lists */
 p, li, ul, ol, footer {
   color: #000;
-  text-align: center;        /* center paragraphs and lists */
+  text-align: center;
 }
 
 /* Navigation bar */
 nav {
   background-color: purple;
   padding: 10px;
-  text-align: center;        /* center nav links */
+  text-align: center;
 }
 nav a {
   color: #000;
@@ -38,7 +46,7 @@ nav a:hover {
 /* Search bar */
 .search-bar {
   margin: 20px 0;
-  text-align: center;        /* center search bar */
+  text-align: center;
 }
 .search-bar input {
   padding: 8px;
@@ -47,7 +55,7 @@ nav a:hover {
   border-radius: 5px;
   background-color: purple;
   color: #000;
-  text-align: center;        /* center text inside input */
+  text-align: center;
 }
 .search-bar button {
   padding: 8px 12px;
@@ -68,7 +76,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  justify-content: center;   /* center images horizontally */
+  justify-content: center;   /* centers images horizontally */
   margin: 20px 0;
 }
 .gallery img {
