@@ -33,3 +33,10 @@
   color: brown;
   text-decoration: underline;
 }
+<style>
+  body {
+    background-color: green;  /* changed from purple to green */
+    color: #000;
+    font-family: Arial, sans-serif;
+  }
+</style>
