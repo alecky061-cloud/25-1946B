@@ -19,36 +19,16 @@
 .gallery img:hover {
   transform: scale(1.05);
 }
-/* Internal CSS Paragraph */
-.internal-paragraph {
-  color: orange;
-  font-weight: bold;
-}
-
-/* Internal CSS h1 */
-.internal-highlight {
-  color: green;
-  text-transform: uppercase;
-}
-
-/* Internal CSS h3 */
-.internal-building {
-  color: red;
-  font-style: italic;
-}
-/* External CSS Paragraph */
 .external-paragraph {
   color: purple;
   text-decoration: underline;
 }
 
-/* External CSS h1 */
 .external-highlight {
   color: blue;
-  letter-spacing: 3px;
+  text-decoration: underline;
 }
 
-/* External CSS h3 */
 .external-building {
   color: brown;
   text-decoration: underline;
