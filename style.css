@@ -1,111 +1,128 @@
 ```css
-/* style.css */
+/* Page background */
 
-/* Page styling */
 body{
-  background-color: black;   /* Main background */
-  color: white;              /* Text color so it is visible */
-  font-family: Arial, sans-serif;
-  margin: 40px;
+background-color:black;
+color:white;
+font-family:Arial, sans-serif;
+margin:0;
 }
 
 /* Navigation bar */
+
 .navbar{
-  background: black;
-  padding: 15px;
-  text-align: center;
+background-color:black;
+padding:15px;
+text-align:center;
 }
 
 /* Navigation link */
+
 .nav-link{
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  transition: 0.3s;
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+padding:10px 20px;
+border-radius:8px;
 }
 
-/* Hover effect */
 .nav-link:hover{
-  background-color: #ff9800;
-  color: black;
+background-color:orange;
+color:black;
 }
 
-/* Gallery styling */
+/* Menu links */
+
+.menu{
+text-align:center;
+padding:10px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+/* Search bar */
+
+.search{
+text-align:center;
+margin:20px;
+}
+
+.search input{
+padding:8px;
+width:250px;
+background:black;
+color:white;
+border:1px solid white;
+}
+
+.search button{
+padding:8px 12px;
+background:white;
+color:black;
+border:none;
+}
+
+/* Gallery */
+
 .gallery{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin: 20px 0;
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+margin:20px 0;
 }
 
 .gallery img{
-  border: 2px solid white;
-  border-radius: 8px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+border:2px solid white;
+border-radius:8px;
+transition:0.3s;
 }
 
 .gallery img:hover{
-  transform: scale(1.05);
+transform:scale(1.05);
 }
 
-/* External paragraph styling */
+/* ID styling */
+
+#main-title{
+color:white;
+font-size:40px;
+}
+
+/* Class styling */
+
+.sub-title{
+color:lightgreen;
+}
+
+/* Paragraph classes */
+
+.p1{color:purple;}
+.p2{color:red;font-style:italic;}
+.p3{color:lightblue;}
+.p4{color:brown;}
+.p5{color:green;}
+.p6{color:orange;font-weight:bold;}
+
+/* External examples */
+
 .external-paragraph{
-  color: purple;
-  text-decoration: underline;
+color:purple;
+text-decoration:underline;
 }
 
 .external-highlight{
-  color: blue;
-  text-decoration: underline;
+color:blue;
+text-decoration:underline;
 }
 
 .external-building{
-  color: brown;
-  text-decoration: underline;
-}
-
-/* ID Styling */
-#main-title{
-  color: darkblue;
-  text-align: center;
-  font-size: 40px;
-}
-
-/* Class styling for headings */
-.sub-title{
-  color: darkgreen;
-  font-family: Arial;
-}
-
-/* Paragraph styling */
-.p1{
-  color: purple;
-}
-
-.p2{
-  color: red;
-  font-style: italic;
-}
-
-.p3{
-  color: blue;
-}
-
-.p4{
-  color: brown;
-}
-
-.p5{
-  color: green;
-}
-
-.p6{
-  color: orange;
-  font-weight: bold;
+color:brown;
+text-decoration:underline;
 }
 ```
