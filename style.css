@@ -1,7 +1,40 @@
-/* External CSS file */
+```css
+/* style.css */
+
+/* Page styling */
+body{
+  background-color: black;   /* Main background */
+  color: white;              /* Text color so it is visible */
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+/* Navigation bar */
+.navbar{
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  padding: 15px;
+  text-align: center;
+}
+
+/* Navigation link */
+.nav-link{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-link:hover{
+  background-color: #ff9800;
+  color: black;
+}
 
 /* Gallery styling */
-.gallery {
+.gallery{
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -9,109 +42,70 @@
   margin: 20px 0;
 }
 
-.gallery img {
-  border: 2px solid #000;
+.gallery img{
+  border: 2px solid white;
   border-radius: 8px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
-.gallery img:hover {
+.gallery img:hover{
   transform: scale(1.05);
 }
-.external-paragraph {
+
+/* External paragraph styling */
+.external-paragraph{
   color: purple;
   text-decoration: underline;
 }
 
-.external-highlight {
+.external-highlight{
   color: blue;
   text-decoration: underline;
 }
 
-.external-building {
+.external-building{
   color: brown;
   text-decoration: underline;
 }
-<style>
-  body {
-    background-color: green;  /* changed from purple to green */
-    color: #000;
-    font-family: Arial, sans-serif;
-  }
-taskcss.html  →  style.css
+
 /* ID Styling */
-
 #main-title{
-color: darkblue;
-text-align: center;
-font-size: 40px;
+  color: darkblue;
+  text-align: center;
+  font-size: 40px;
 }
-
 
 /* Class styling for headings */
-
 .sub-title{
-color: darkgreen;
-font-family: Arial;
+  color: darkgreen;
+  font-family: Arial;
 }
 
-
 /* Paragraph styling */
-
 .p1{
-color: purple;
+  color: purple;
 }
 
 .p2{
-color: red;
-font-style: italic;
+  color: red;
+  font-style: italic;
 }
 
 .p3{
-color: blue;
+  color: blue;
 }
 
 .p4{
-color: brown;
+  color: brown;
 }
 
 .p5{
-color: green;
+  color: green;
 }
 
 .p6{
-color: orange;
-font-weight: bold;
+  color: orange;
+  font-weight: bold;
 }
-<link rel="stylesheet" href="style.css">
-body{
-font-family: Arial;
-margin: 40px;
-}
-/* Navigation bar */
-
-.navbar{
-background: linear-gradient(90deg, #4e54c8, #8f94fb);
-padding: 15px;
-text-align: center;
-}
-
-/* Navigation link */
-
-.nav-link{
-color: white;
-text-decoration: none;
-font-weight: bold;
-font-size: 18px;
-padding: 10px 20px;
-border-radius: 8px;
-transition: 0.3s;
-}
-
-/* Hover effect */
-
-.nav-link:hover{
-background-color: #ff9800;
-color: black;
-}
+```
