@@ -11,7 +11,7 @@ body{
 
 /* Navigation bar */
 .navbar{
-  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  background: black;
   padding: 15px;
   text-align: center;
 }
