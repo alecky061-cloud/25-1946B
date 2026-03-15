@@ -1,11 +1,12 @@
 ```css
-/* Page background */
+/* Page styling */
 
 body{
 background-color:black;
 color:white;
 font-family:Arial, sans-serif;
 margin:0;
+text-align:center;
 }
 
 /* Navigation bar */
@@ -13,7 +14,6 @@ margin:0;
 .navbar{
 background-color:black;
 padding:15px;
-text-align:center;
 }
 
 /* Navigation link */
@@ -23,48 +23,78 @@ color:white;
 text-decoration:none;
 font-weight:bold;
 font-size:18px;
-padding:10px 20px;
-border-radius:8px;
 }
 
 .nav-link:hover{
-background-color:orange;
-color:black;
+color:orange;
 }
 
-/* Menu links */
+/* Navigation menu */
 
 .menu{
-text-align:center;
+background-color:#111;
 padding:10px;
 }
 
 .menu a{
 color:white;
 text-decoration:none;
-margin:0 10px;
+margin:0 15px;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:orange;
+text-decoration:underline;
 }
 
 /* Search bar */
 
-.search{
-text-align:center;
+.search-bar{
 margin:20px;
 }
 
-.search input{
+.search-bar input{
 padding:8px;
 width:250px;
+border-radius:5px;
+border:1px solid white;
 background:black;
 color:white;
-border:1px solid white;
 }
 
-.search button{
+.search-bar button{
 padding:8px 12px;
 background:white;
 color:black;
 border:none;
+border-radius:5px;
+}
+
+/* Container */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+/* Table */
+
+table{
+margin:auto;
+border-collapse:collapse;
+width:80%;
+}
+
+th,td{
+border:2px solid white;
+padding:10px;
+}
+
+th{
+background:white;
+color:black;
 }
 
 /* Gallery */
@@ -74,7 +104,7 @@ display:flex;
 flex-wrap:wrap;
 gap:15px;
 justify-content:center;
-margin:20px 0;
+margin:20px;
 }
 
 .gallery img{
@@ -87,11 +117,12 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
-/* ID styling */
+/* Main title with glow effect */
 
 #main-title{
-color:white;
 font-size:40px;
+color:white;
+text-shadow:0 0 10px #00ffff;
 }
 
 /* Class styling */
@@ -102,27 +133,28 @@ color:lightgreen;
 
 /* Paragraph classes */
 
-.p1{color:purple;}
-.p2{color:red;font-style:italic;}
-.p3{color:lightblue;}
-.p4{color:brown;}
-.p5{color:green;}
-.p6{color:orange;font-weight:bold;}
+.p1{color:lightblue;}
+.p2{color:orange;}
+.p3{color:lightgreen;}
 
-/* External examples */
+/* External CSS examples */
 
 .external-paragraph{
-color:purple;
+color:violet;
 text-decoration:underline;
 }
 
 .external-highlight{
-color:blue;
+color:skyblue;
 text-decoration:underline;
 }
 
-.external-building{
-color:brown;
-text-decoration:underline;
+/* Footer */
+
+footer{
+margin-top:40px;
+padding:15px;
+background:#111;
+font-size:14px;
 }
 ```
