@@ -1,167 +1,139 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-  <header class="navbar">
-  <a href="https://alecky061-cloud.github.io/25-1946B/assignment.html" class="nav-link">
-    Classes and IDs
-  </a>
-</header>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Electronic Gaming Hub</title>
+<meta charset="UTF-8">
+<title>Electronic Gaming Hub</title>
 
-  <!-- Internal CSS -->
-  <style>
-    body {
-      background-color: black;   /* whole page purple */
-      color: #000;                /* all text black */
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: black;
-    }
+<!-- Internal CSS -->
+<style>
 
-    h1, h2 {
-      color: #000;
-      text-align: center;
-    }
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
 
-    p {
-      color: #000;
-      text-align: center;
-    }
+h1,h2{
+  text-align:center;
+}
 
-    table {
-      margin: 20px auto;
-      border-collapse: collapse;
-      width: 80%;
-      background-color: purple;
-      color: #000;
-    }
+table{
+  margin:20px auto;
+  border-collapse:collapse;
+  width:80%;
+}
 
-    th, td {
-      border: 2px solid #000;
-      padding: 10px;
-      text-align: center;
-    }
+th,td{
+  border:2px solid white;
+  padding:10px;
+  text-align:center;
+}
 
-    th {
-      background-color: #000;
-      color: purple;
-    }
-  </style>
+th{
+  background-color:white;
+  color:black;
+}
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
+</style>
+
 </head>
+
 <body>
 
-  <!-- Navigation with inline CSS -->
-  <nav style="background-color: purple; padding: 10px; text-align: center;">
-    <a href="index.html" style="color: black; margin: 0 15px; text-decoration: none;">Home</a> |
-    <a href="gameplay.html" style="color: black; margin: 0 15px; text-decoration: none;">Gameplay Video</a> |
-    <a href="reanimaImages.html" style="color: black; margin: 0 15px; text-decoration: none;">Reanimal Images</a>
-  </nav>
+<header class="navbar">
+<a href="https://alecky061-cloud.github.io/25-1946B/assignment.html" class="nav-link">
+Classes and IDs
+</a>
+</header>
 
-  <!-- Search Bar -->
-  <div class="search-bar" style="margin: 20px 0; text-align: center;">
-    <input type="text" placeholder="Search games, features..." 
-           style="padding: 8px; width: 250px; border: 1px solid #444; border-radius: 5px; background-color: purple; color: black; text-align: center;">
-    <button type="submit" style="padding: 8px 12px; margin-left: 5px; background-color: black; color: purple; border: none; border-radius: 5px; cursor: pointer;">
-      Search
-    </button>
-  </div>
+<!-- Navigation -->
+<nav class="menu">
+<a href="index.html">Home</a> |
+<a href="gameplay.html">Gameplay Video</a> |
+<a href="reanimaImages.html">Reanimal Images</a>
+</nav>
 
-  <!-- Container -->
-  <div class="container">
-    <h1>Electronic Gaming Hub</h1>
+<!-- Search -->
+<div class="search">
+<input type="text" placeholder="Search games...">
+<button>Search</button>
+</div>
 
-    <!-- Multiple Paragraphs -->
-    <p>Welcome to the hub! Here you’ll find highlights from immersive games like Reanimal, GTA 5, and Call of Duty.</p>
-    <p>Our mission is to create a space where gamers can explore gameplay videos, image galleries, and detailed features in a clean, centered layout.</p>
-    <p>The purple background sets a vibrant tone, while black text ensures readability and a professional look.</p>
-    <p>We believe gaming is more than entertainment — it’s a way to connect, share experiences, and enjoy creativity together.</p>
-    <p>Scroll down to see structured highlights in a table, visual showcases in the gallery, and a featured YouTube video.</p>
+<div class="container">
 
-    <!-- Table -->
-    <h2>Game Highlights Table</h2>
-    <table>
-      <tr>
-        <th>Game</th>
-        <th>Genre</th>
-        <th>Key Feature</th>
-      </tr>
-      <tr>
-        <td>Reanimal</td>
-        <td>Horror Survival</td>
-        <td>Unique creature encounters</td>
-      </tr>
-      <tr>
-        <td>GTA 5</td>
-        <td>Action Adventure</td>
-        <td>Open world exploration</td>
-      </tr>
-      <tr>
-        <td>Call of Duty</td>
-        <td>FPS</td>
-        <td>Multiplayer combat</td>
-      </tr>
-    </table>
+<h1 id="main-title">Electronic Gaming Hub</h1>
 
-    <!-- Gallery -->
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="reanima1.jpg" alt="Reanimal gameplay scene" width="300">
-      <img src="reanima2.jpg" alt="Reanimal monster" width="300">
-      <img src="reanima3.jpg" alt="Reanimal cinema" width="300">
-    </div>
+<p class="p1">Welcome to the hub! Here you'll find highlights from immersive games.</p>
 
-    <!-- YouTube Video -->
-    <h2>Featured Gameplay Video</h2>
-    <iframe width="560" height="315" 
-      src="https://www.youtube.com/embed/pUCbW6YRipo?si=QWvRpscGv_58sK4C" 
-      title="YouTube video player" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
+<p class="p2">Gaming connects players around the world through adventure and creativity.</p>
 
-    <footer>© 2026 Electronic Gaming Hub</footer>
-  </div>
+<p class="p3">Explore gameplay videos, galleries and game features.</p>
+
+<h2 class="sub-title">Game Highlights Table</h2>
+
+<table>
+
+<tr>
+<th>Game</th>
+<th>Genre</th>
+<th>Key Feature</th>
+</tr>
+
+<tr>
+<td>Reanimal</td>
+<td>Horror Survival</td>
+<td>Creature encounters</td>
+</tr>
+
+<tr>
+<td>GTA 5</td>
+<td>Action Adventure</td>
+<td>Open world exploration</td>
+</tr>
+
+<tr>
+<td>Call of Duty</td>
+<td>FPS</td>
+<td>Multiplayer combat</td>
+</tr>
+
+</table>
+
+<h2 class="external-highlight">Gallery</h2>
+
+<div class="gallery">
+
+<img src="reanima1.jpg" width="300">
+<img src="reanima2.jpg" width="300">
+<img src="reanima3.jpg" width="300">
+
+</div>
+
+<h2>Featured Gameplay Video</h2>
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/pUCbW6YRipo"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<p style="color:lightblue;">
+Electronic gaming has evolved from arcade machines to massive open-world experiences.
+</p>
+
+<h3 class="external-building">Game Development Studios</h3>
+
+<footer>
+<p>© 2026 Electronic Gaming Hub</p>
+</footer>
+
+</div>
 
 </body>
 </html>
-<style>
-  .internal-paragraph {
-    color: orange;
-    font-weight: bold;
-  }
-
-  .internal-highlight {
-    color: green;
-  }
-
-  .internal-building {
-    color: red;
-    font-style: italic;
-  }
-</style>
-<p style="color: blue; font-style: italic;">
-  Electronic gaming has evolved from simple arcade machines to massive open-world experiences.
-</p>
-
-<h1 style="color: crimson;">
-  Highlight 1 – Open World Exploration
-</h1>
-
-<h3 style="color: teal;">
-  Building 1 – Game Development Studios
-</h3>
-<div class="container">
-
-
+```
