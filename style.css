@@ -312,3 +312,82 @@ footer {
   padding: 15px;
   margin-top: 20px;
 }
+html {
+  scroll-behavior: smooth;
+}
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0f0f0f, #2a003f);
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu styling */
+nav {
+  background: #1a1a1a;
+  padding: 10px;
+  position: sticky; /* keeps menu visible */
+  top: 0;
+  z-index: 1000;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.menu li a:hover {
+  background: #6a0dad;
+  border-radius: 4px;
+}
+
+/* Section styling */
+section {
+  min-height: 100vh; /* each section fills the screen */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Different background shades for contrast */
+#home { background: rgba(255,255,255,0.05); }
+#games { background: rgba(255,255,255,0.08); }
+#videos { background: rgba(255,255,255,0.05); }
+#gallery { background: rgba(255,255,255,0.08); }
+#about { background: rgba(255,255,255,0.05); }
+#contact { background: rgba(255,255,255,0.08); }
+
+/* Gallery images */
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Video container */
+#videos iframe {
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 15px;
+}
