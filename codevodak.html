@@ -1,40 +1,4 @@
-<!-- ================= INDEX.HTML ================= -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaming Hub</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-  <h1>🎮 Electronic Gaming Hub</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="games.html">Games</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="tables.html">Leaderboard</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main class="two-columns">
-  <section>
-    <h2>Welcome to the Hub</h2>
-    <p>The Electronic Gaming Hub is your one-stop destination for everything gaming. From action-packed adventures to competitive esports, we bring gamers together.</p>
-    <p>Explore different games, watch gameplay videos, and check out top player rankings on our leaderboard.</p>
-    <p>Gaming is not just entertainment—it is a lifestyle enjoyed by millions worldwide.</p>
-    <p>Join our growing gaming community and stay updated with the latest trends.</p>
-    <p>Level up your experience with us!</p>
-  </section>
-
-  <aside>
-    <h2>Game Categories</h2>
-    <ul>
+<!-- ================= INDEX.HTML (ALL-IN-ONE WEBSITE) ================= -->
       <li>Action
         <ul>
           <li>Call of Duty</li>
@@ -47,166 +11,65 @@
       <li>Strategy</li>
     </ul>
   </aside>
-</main>
+</section>
+
+<!-- GAMES -->
+<section id="games">
+  <h2>Popular Games</h2>
+  <ul>
+    <li>Call of Duty</li>
+    <li>FIFA</li>
+    <li>Need for Speed</li>
+    <li>Minecraft</li>
+    <li>GTA V</li>
+  </ul>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Game Gallery</h2>
+  <div>
+    <img src="gamephoto.jpg">
+    <img src="gamephoto.jpg">
+    <img src="gamephoto.jpg">
+    <img src="gamephoto.jpg">
+    <img src="gamephoto.jpg">
+  </div>
+
+  <h3>Gameplay Videos</h3>
+  <iframe width="300" height="200" src="https://www.youtube.com/embed/nTUoIyTMw0Q" allowfullscreen></iframe>
+  <iframe width="300" height="200" src="https://www.youtube.com/embed/P_31J2syxDc" allowfullscreen></iframe>
+  <iframe width="300" height="200" src="https://www.youtube.com/embed/OhHvHrDBru8" allowfullscreen></iframe>
+  <iframe width="300" height="200" src="https://www.youtube.com/embed/54dabgZJ5YA" allowfullscreen></iframe>
+  <iframe width="300" height="200" src="https://www.youtube.com/embed/MlX3kh1Y7Cg" allowfullscreen></iframe>
+</section>
+
+<!-- LEADERBOARD -->
+<section id="leaderboard">
+  <h2>Leaderboard</h2>
+  <table>
+    <tr><th>Player</th><th>Score</th></tr>
+    <tr><td>Alex</td><td>980</td></tr>
+    <tr><td>Brian</td><td>870</td></tr>
+  </table>
+
+  <table>
+    <tr><th>Game</th><th>Top Score</th></tr>
+    <tr><td>FIFA</td><td>1200</td></tr>
+    <tr><td>COD</td><td>1500</td></tr>
+  </table>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: gaminghub@email.com</p>
+  <p>Phone: +254 700 000000</p>
+</section>
 
 <footer>
   <p>© 2026 Electronic Gaming Hub</p>
 </footer>
 
-</body>
-</html>
-
-
-<!-- ================= STYLE.CSS ================= -->
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0a0a0a;
-  color: #00ffcc;
-}
-
-header {
-  background: #000;
-  padding: 15px;
-  text-align: center;
-  border-bottom: 2px solid #00ffcc;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 10px;
-}
-
-nav a {
-  color: #00ffcc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: white;
-}
-
-.two-columns {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-}
-
-section, aside {
-  flex: 1;
-  background: #111;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-img {
-  width: 150px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background: #000;
-  border-top: 2px solid #00ffcc;
-}
-
-
-<!-- ================= GAMES.HTML ================= -->
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h1>Popular Games</h1>
-<p>Explore some of the most popular games played worldwide.</p>
-<ul>
-  <li>Call of Duty</li>
-  <li>FIFA</li>
-  <li>Need for Speed</li>
-  <li>Minecraft</li>
-  <li>GTA V</li>
-</ul>
-</body>
-</html>
-
-
-<!-- ================= GALLERY.HTML ================= -->
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h1>Game Gallery</h1>
-<div>
-  <img src="https://via.placeholder.com/150">
-  <img src="https://via.placeholder.com/150">
-  <img src="https://via.placeholder.com/150">
-  <img src="https://via.placeholder.com/150">
-  <img src="https://via.placeholder.com/150">
-</div>
-
-<h2>Gameplay Videos</h2>
-<video controls width="300">
-  <source src="sample.mp4" type="video/mp4">
-</video>
-<video controls width="300">
-  <source src="sample.mp4" type="video/mp4">
-</video>
-<video controls width="300">
-  <source src="sample.mp4" type="video/mp4">
-</video>
-<video controls width="300">
-  <source src="sample.mp4" type="video/mp4">
-</video>
-<video controls width="300">
-  <source src="sample.mp4" type="video/mp4">
-</video>
-</body>
-</html>
-
-
-<!-- ================= TABLES.HTML ================= -->
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h1>Leaderboard</h1>
-<table border="1" width="100%">
-<tr><th>Player</th><th>Score</th></tr>
-<tr><td>Alex</td><td>980</td></tr>
-<tr><td>Brian</td><td>870</td></tr>
-</table>
-
-<table border="1" width="100%">
-<tr><th>Game</th><th>Top Score</th></tr>
-<tr><td>FIFA</td><td>1200</td></tr>
-<tr><td>COD</td><td>1500</td></tr>
-</table>
-</body>
-</html>
-
-
-<!-- ================= CONTACT.HTML ================= -->
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h1>Contact Us</h1>
-<p>Email: gaminghub@email.com</p>
-<p>Phone: +254 700 000000</p>
 </body>
 </html>
