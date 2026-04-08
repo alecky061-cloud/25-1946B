@@ -963,3 +963,25 @@ footer {
 #home {
     background: linear-gradient(to right, #1e3a8a, #0f172a);
 }
+/* Center content and limit width */
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Improve contrast */
+p {
+    color: #e2e8f0;
+}
+
+/* Make buttons nicer */
+button {
+    background-color: #22c55e;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16a34a;
+}
