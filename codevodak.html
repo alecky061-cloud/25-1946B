@@ -4,18 +4,19 @@
 <meta charset="UTF-8">
 <title>Electron Gaming Hub</title>
 
-<link rel="stylesheet" href="style.css">
-
 <style>
-html { scroll-behavior: smooth; }
 
+/* GENERAL */
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background-color: #0f172a;
   color: #e2e8f0;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
+/* NAVIGATION */
 nav {
   background: #020617;
   padding: 15px;
@@ -32,49 +33,114 @@ nav {
 .menu a {
   color: #38bdf8;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .menu a:hover {
-  color: yellow;
+  color: #facc15;
 }
 
+/* SECTIONS */
 section {
   padding: 40px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-h2 { color: #22c55e; }
+/* HEADINGS */
+h2 {
+  color: #22c55e;
+  font-size: 32px;
+}
 
+h3 {
+  font-size: 24px;
+}
+
+/* TWO COLUMNS */
+.columns {
+  display: flex;
+  gap: 20px;
+}
+
+.columns div {
+  flex: 1;
+}
+
+/* IMAGES */
 img {
   width: 200px;
   margin: 10px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
-.gallery img:hover {
+img:hover {
   transform: scale(1.1);
 }
 
-.video-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
+/* TABLES */
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 20px;
 }
 
 table, th, td {
   border: 1px solid gray;
+}
+
+th, td {
   padding: 10px;
 }
 
+/* VIDEO FIX (IMPORTANT 🔥) */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 300px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* FORM */
+input, textarea, button {
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+/* BUTTON */
+button {
+  background-color: #22c55e;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #16a34a;
+}
+
+/* FOOTER */
 footer {
   background: #020617;
   text-align: center;
   padding: 15px;
 }
+
 </style>
 </head>
 
@@ -92,22 +158,22 @@ footer {
 </ul>
 </nav>
 
-<!-- HOME (2 COLUMNS) -->
+<!-- HOME -->
 <section id="home">
 <h2>Welcome to Electron Gaming Hub</h2>
 
-<div style="display:flex; gap:20px;">
+<div class="columns">
 
-<div style="flex:1;">
-<p>Electron Gaming Hub is a modern platform designed to showcase trending games and exciting gameplay experiences.</p>
-<p>We provide a space where gamers can explore new releases, watch gameplay videos, and discover hidden gems.</p>
-<p>Our goal is to bring together gaming enthusiasts in one creative and interactive environment.</p>
+<div>
+<p>Electron Gaming Hub is a modern platform showcasing trending video games and immersive gameplay experiences.</p>
+<p>We provide engaging content including videos, images, and game reviews for all players.</p>
+<p>This project demonstrates web development skills such as layout design, styling, and multimedia integration.</p>
 </div>
 
-<div style="flex:1;">
-<p>Gaming has become one of the fastest-growing industries in the world, connecting millions of players globally.</p>
-<p>This website demonstrates web design skills including layout creation, multimedia integration, and styling.</p>
-<p>Enjoy exploring our content and discovering your next favorite game.</p>
+<div>
+<p>Gaming connects millions of people worldwide through entertainment and competition.</p>
+<p>Our platform highlights creativity, innovation, and the future of digital gaming.</p>
+<p>Explore and discover exciting games and content right here.</p>
 </div>
 
 </div>
@@ -132,12 +198,11 @@ footer {
 
 <h3>Upcoming Releases</h3>
 <table>
-<tr><th>Title</th><th>Date</th></tr>
+<tr><th>Title</th><th>Release Date</th></tr>
 <tr><td>Starfall</td><td>May 2026</td></tr>
 <tr><td>ShadowRun</td><td>August 2026</td></tr>
 </table>
 
-<!-- NESTED LIST -->
 <h3>Game Categories</h3>
 <ul>
 <li>Action
@@ -162,12 +227,13 @@ footer {
 <h2>Gameplay Videos</h2>
 
 <div class="video-container">
-<iframe width="300" height="200" src="https://www.youtube.com/embed/nTUoIyTMw0Q"></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/P_31J2syxDc"></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/OhHvHrDBru8"></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/54dabgZJ5YA"></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/MlX3kh1Y7Cg"></iframe>
+<iframe src="https://www.youtube.com/embed/nTUoIyTMw0Q" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/P_31J2syxDc" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/OhHvHrDBru8" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/54dabgZJ5YA" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/MlX3kh1Y7Cg" allowfullscreen></iframe>
 </div>
+
 </section>
 
 <!-- GALLERY -->
@@ -188,11 +254,11 @@ footer {
 <section id="about">
 <h2>About Us</h2>
 
-<p>Electron Gaming Hub is a student project created to demonstrate web development skills.</p>
-<p>It includes HTML structure, CSS styling, and multimedia elements.</p>
-<p>The platform highlights gaming culture and modern user interface design.</p>
-<p>This project also focuses on usability, accessibility, and visual appeal.</p>
-<p>It represents a complete front-end development assignment.</p>
+<p>Electron Gaming Hub is a student project designed to showcase web development skills.</p>
+<p>It includes structured layout, multimedia content, and modern styling techniques.</p>
+<p>The platform highlights gaming culture and digital creativity.</p>
+<p>This project demonstrates the use of HTML, CSS, and interactive features.</p>
+<p>It is designed to be visually appealing and user-friendly.</p>
 
 </section>
 
@@ -219,7 +285,7 @@ Message:<br>
 
 <script>
 function showMessage() {
-  alert("Thanks for visiting Electron Gaming Hub!");
+  alert("Welcome to Electron Gaming Hub!");
 }
 </script>
 
