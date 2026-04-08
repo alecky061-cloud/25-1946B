@@ -784,3 +784,80 @@ footer {
   text-align: center;
   padding: 15px;
 }
+/* ================= style.css ================= */
+}
+
+.navbar a:hover {
+  color: cyan;
+}
+
+.two-column, section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+section h2, section h3, table {
+  grid-column: span 2;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0,255,255,0.6);
+}
+
+.card img, iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background: cyan;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+}
+
+.gallery, .video-container, .image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  grid-column: span 2;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);} 
+  to {opacity: 1; transform: translateY(0);} 
+}
+
+section {
+  animation: fadeIn 1s ease-in;
+}
+
+@media (max-width: 768px) {
+  .two-column, section {
+    grid-template-columns: 1fr;
+  }
+}
