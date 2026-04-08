@@ -1,145 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Electron Gaming Hub</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Electron Gaming Hub</title>
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+<link rel="stylesheet" href="style.css">
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+nav {
+  background: #020617;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: yellow;
+}
+
+section {
+  padding: 40px;
+}
+
+h2 { color: #22c55e; }
+
+img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 15px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- Navigation -->
+<!-- MENU -->
 <nav>
-  <ul class="menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#games">Games</a></li>
-    <li><a href="#videos">Videos</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<ul class="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<!-- Home -->
+<!-- HOME (2 COLUMNS) -->
 <section id="home">
-  <h2>Welcome to Electron Gaming Hub</h2>
-  <p class="formatted">This hub brings together the best of modern gaming, immersive visuals, and community-driven content.</p>
-  <p class="formatted">Explore our curated game lists and exciting gameplay videos.</p>
-</section>
+<h2>Welcome to Electron Gaming Hub</h2>
 
-<!-- Games -->
-<section id="games">
-  <h2>Featured Games</h2>
-  <img src="gamephoto1.jpg" alt="Game 1">
-  <img src="gamephoto2.jpg" alt="Game 2">
+<div style="display:flex; gap:20px;">
 
-  <h3>Top Rated Games</h3>
-  <table>
-    <tr><th>Title</th><th>Genre</th><th>Rating</th></tr>
-    <tr><td>CyberQuest</td><td>RPG</td><td>9/10</td></tr>
-    <tr><td>BattleForge</td><td>Action</td><td>8.5/10</td></tr>
-  </table>
-
-  <h3>Upcoming Releases</h3>
-  <table>
-    <tr><th>Title</th><th>Release Date</th></tr>
-    <tr><td>Starfall</td><td>May 2026</td></tr>
-    <tr><td>ShadowRun</td><td>August 2026</td></tr>
-  </table>
-</section>
-
-<!-- Videos -->
-<section id="videos">
-  <h2>Gameplay Videos</h2>
-  <div class="video-container">
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/nTUoIyTMw0Q" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/P_31J2syxDc" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/OhHvHrDBru8" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/54dabgZJ5YA" allowfullscreen></iframe>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/MlX3kh1Y7Cg" allowfullscreen></iframe>
-  </div>
-</section>
-
-<!-- Gallery -->
-<section id="gallery">
-  <h2>Game Gallery</h2>
-  <div class="gallery">
-    <img src="gamephoto1.jpg" alt="Game 1">
-    <img src="gamephoto2.jpg" alt="Game 2">
-    <img src="gamephoto3.jpg" alt="Game 3">
-    <img src="gamephoto4.jpg" alt="Game 4">
-    <img src="gamephoto5.jpg" alt="Game 5">
-  </div>
-</section>
-
-<!-- About -->
-<section id="about">
-  <h2>About Us</h2>
-  <p class="formatted">Electron Gaming Hub is a student project showcasing modern web design and gaming culture.</p>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p class="formatted">Email: <strong>support@electronhub.com</strong></p>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>&copy; 2026 Electron Gaming Hub | Designed by Alex</p>
-</footer>
-  <div style="display:flex; gap:20px;">
-  <div style="flex:1;">
-    <h3>Latest News</h3>
-    <p class="formatted">Stay updated with the newest gaming trends and releases.</p>
-  </div>
-
-  <div style="flex:1;">
-    <h3>Top Players</h3>
-    <p class="formatted">Meet the best gamers in our community.</p>
-  </div>
+<div style="flex:1;">
+<p>Electron Gaming Hub is a modern platform designed to showcase trending games and exciting gameplay experiences.</p>
+<p>We provide a space where gamers can explore new releases, watch gameplay videos, and discover hidden gems.</p>
+<p>Our goal is to bring together gaming enthusiasts in one creative and interactive environment.</p>
 </div>
-  <h3>Game Categories</h3>
+
+<div style="flex:1;">
+<p>Gaming has become one of the fastest-growing industries in the world, connecting millions of players globally.</p>
+<p>This website demonstrates web design skills including layout creation, multimedia integration, and styling.</p>
+<p>Enjoy exploring our content and discovering your next favorite game.</p>
+</div>
+
+</div>
+</section>
+
+<!-- GAMES -->
+<section id="games">
+<h2>Featured Games</h2>
+
+<img src="gamephoto1.jpg">
+<img src="gamephoto2.jpg">
+<img src="gamephoto3.jpg">
+<img src="gamephoto4.jpg">
+<img src="gamephoto5.jpg">
+
+<h3>Top Rated Games</h3>
+<table>
+<tr><th>Title</th><th>Genre</th><th>Rating</th></tr>
+<tr><td>CyberQuest</td><td>RPG</td><td>9/10</td></tr>
+<tr><td>BattleForge</td><td>Action</td><td>8.5/10</td></tr>
+</table>
+
+<h3>Upcoming Releases</h3>
+<table>
+<tr><th>Title</th><th>Date</th></tr>
+<tr><td>Starfall</td><td>May 2026</td></tr>
+<tr><td>ShadowRun</td><td>August 2026</td></tr>
+</table>
+
+<!-- NESTED LIST -->
+<h3>Game Categories</h3>
 <ul>
-  <li>Action
-    <ul>
-      <li>Shooter</li>
-      <li>Adventure</li>
-    </ul>
-  </li>
-  <li>RPG
-    <ul>
-      <li>Fantasy</li>
-      <li>Open World</li>
-    </ul>
-  </li>
+<li>Action
+  <ul>
+    <li>Shooter</li>
+    <li>Adventure</li>
+  </ul>
+</li>
+<li>RPG
+  <ul>
+    <li>Fantasy</li>
+    <li>Open World</li>
+  </ul>
+</li>
+<li>Sports</li>
 </ul>
-  
 
-</body>
-</html>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+<h2>Gameplay Videos</h2>
+
+<div class="video-container">
+<iframe width="300" height="200" src="https://www.youtube.com/embed/nTUoIyTMw0Q"></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/P_31J2syxDc"></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/OhHvHrDBru8"></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/54dabgZJ5YA"></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/MlX3kh1Y7Cg"></iframe>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2>Game Gallery</h2>
+
+<div class="gallery">
+<img src="gamephoto1.jpg">
+<img src="gamephoto2.jpg">
+<img src="gamephoto3.jpg">
+<img src="gamephoto4.jpg">
+<img src="gamephoto5.jpg">
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Us</h2>
+
+<p>Electron Gaming Hub is a student project created to demonstrate web development skills.</p>
+<p>It includes HTML structure, CSS styling, and multimedia elements.</p>
+<p>The platform highlights gaming culture and modern user interface design.</p>
+<p>This project also focuses on usability, accessibility, and visual appeal.</p>
+<p>It represents a complete front-end development assignment.</p>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Us</h2>
+
 <form>
-  Name:<br>
-  <input type="text"><br><br>
+Name:<br>
+<input type="text"><br><br>
 
-  Email:<br>
-  <input type="email"><br><br>
+Email:<br>
+<input type="email"><br><br>
 
-  Message:<br>
-  <textarea></textarea><br><br>
+Message:<br>
+<textarea></textarea><br><br>
 
-  <button type="submit">Send</button>
+<button type="submit">Send</button>
 </form>
+
+<br>
+
 <button onclick="showMessage()">Click Me</button>
 
 <script>
 function showMessage() {
-    alert("Welcome to Electron Gaming Hub!");
+  alert("Thanks for visiting Electron Gaming Hub!");
 }
 </script>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>&copy; 2026 Electron Gaming Hub | Designed by Alex</p>
+</footer>
+
+</body>
+</html>
