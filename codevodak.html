@@ -36,7 +36,7 @@
 <!-- Games -->
 <section id="games">
   <h2>Featured Games</h2>
-  <img src="gamephoto.jpg" alt="Game 1">
+  <img src="gamephoto1.jpg" alt="Game 1">
   <img src="gamephoto2.jpg" alt="Game 2">
 
   <h3>Top Rated Games</h3>
@@ -70,7 +70,7 @@
 <section id="gallery">
   <h2>Game Gallery</h2>
   <div class="gallery">
-    <img src="gamephoto.jpg" alt="Game 1">
+    <img src="gamephoto1.jpg" alt="Game 1">
     <img src="gamephoto2.jpg" alt="Game 2">
     <img src="gamephoto3.jpg" alt="Game 3">
     <img src="gamephoto4.jpg" alt="Game 4">
@@ -94,6 +94,52 @@
 <footer>
   <p>&copy; 2026 Electron Gaming Hub | Designed by Alex</p>
 </footer>
+  <div style="display:flex; gap:20px;">
+  <div style="flex:1;">
+    <h3>Latest News</h3>
+    <p class="formatted">Stay updated with the newest gaming trends and releases.</p>
+  </div>
+
+  <div style="flex:1;">
+    <h3>Top Players</h3>
+    <p class="formatted">Meet the best gamers in our community.</p>
+  </div>
+</div>
+  <h3>Game Categories</h3>
+<ul>
+  <li>Action
+    <ul>
+      <li>Shooter</li>
+      <li>Adventure</li>
+    </ul>
+  </li>
+  <li>RPG
+    <ul>
+      <li>Fantasy</li>
+      <li>Open World</li>
+    </ul>
+  </li>
+</ul>
+  
 
 </body>
 </html>
+<form>
+  Name:<br>
+  <input type="text"><br><br>
+
+  Email:<br>
+  <input type="email"><br><br>
+
+  Message:<br>
+  <textarea></textarea><br><br>
+
+  <button type="submit">Send</button>
+</form>
+<button onclick="showMessage()">Click Me</button>
+
+<script>
+function showMessage() {
+    alert("Welcome to Electron Gaming Hub!");
+}
+</script>
